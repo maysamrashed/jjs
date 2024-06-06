@@ -1,4 +1,11 @@
-
-console.log(document.querySelector(".userProfile h2").textContent="hello maysam");
-
-document.querySelector(".userInfo p").classList.add("user-info");
+var Frontend = document.querySelector("div");
+var Sizebig = document.querySelector(".big");
+var Sizesmall = document.querySelector(".small");
+function changeSize(){
+    Frontend.classList.add("size");
+}
+function changeSizesmall(){
+    Frontend.classList.remove("size");
+}
+Sizebig.onclick = changeSize;
+Sizesmall.onclick = changeSizesmall;
